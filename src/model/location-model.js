@@ -16,6 +16,11 @@ var locationModel = new Schema({
         type: Number,
         unique: false,
         required: false
+    },
+    tags: {
+        type: [String],
+        unique: false,
+        required: false
     }
 })
 

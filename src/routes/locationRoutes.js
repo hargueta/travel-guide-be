@@ -3,7 +3,7 @@ var router = express.Router()
 
 var Location = require('../model/location-model')
 
-router.get('/locations', function(request, response) {
+router.get('/', function(request, response) {
     var currPage = request.query.currentPage || 1
     var limit = parseInt(request.query.limit)
 
